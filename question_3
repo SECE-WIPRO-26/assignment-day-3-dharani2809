@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class MultipleCheck {
+    public static int isExactMultiple(int n, int m) {
+        if (n == 0 || m == 0) {
+            return 3; 
+        } else if (n % m == 0) {
+            return 2;  
+        } else {
+            return 1;  
+        }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter first number (N): ");
+        int n = sc.nextInt();
+        System.out.print("Enter second number (M): ");
+        int m = sc.nextInt();
+
+        int result = isExactMultiple(n, m);
+        System.out.println("Result: " + result);
+    }
+}
