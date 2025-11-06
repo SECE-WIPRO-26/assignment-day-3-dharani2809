@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class EvenCounter {
+    public static int countEven(int a, int b, int c, int d, int e) {
+        int count = 0;
+        if (a % 2 == 0) count++;
+        if (b % 2 == 0) count++;
+        if (c % 2 == 0) count++;
+        if (d % 2 == 0) count++;
+        if (e % 2 == 0) count++;
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter 5 numbers:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        int d = sc.nextInt();
+        int e = sc.nextInt();
+
+        int evenCount = countEven(a, b, c, d, e);
+        System.out.println("Count of even numbers: " + evenCount);
+    }
+}
